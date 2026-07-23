@@ -1,6 +1,21 @@
 # Cola rápida para instalar/configurar Linux minimal em VM
+
+Verificar se está com internet:
+
+```bash
+ping google.com
+```
+
 ---
-*começa aqui
+
+Alternar para usuário root:
+
+```bash
+su -
+```
+Nota:
+`su` significa substitute user ou switch user. Ele alterna o contexto do usuário atual para outro sem encerrar a sessão original. Se você executar `su -`, você alterna para o `root`.
+
 
 ---
 
