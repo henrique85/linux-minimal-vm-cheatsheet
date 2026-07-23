@@ -9,16 +9,17 @@ Alternar para usuário `root`:
 ```bash
 su -
 ```
-Nota:</br>
-O comando `su` significa **substitute user** ou **switch user**. Ele alterna o contexto do usuário atual para outro sem encerrar a sessão original. 
 
-O papel do hífen (`-`)</br>
-O hífen não muda a ação do comando (que continua sendo *alternar*), mas altera o **ambiente**:
 
-* `su` (**sem hífen**): Alterna para o usuário root mantendo as variáveis de ambiente (como `$PATH` e `$HOME`) do seu usuário comum.
+> Importante: </br>
+> O comando `su` significa **substitute user** ou **switch user**. Ele alterna o contexto do usuário atual para outro sem encerrar a sessão original. 
+> O papel do hífen (`-`) não é mudar a ação do comando (que continua sendo *alternar*), mas alterar o **ambiente**:
+> * `su` (**sem hífen**): Alterna para o usuário root mantendo as variáveis de ambiente (como `$PATH` e `$HOME`) do seu usuário comum.
+> * `su -` (**com hífen**): Alterna para o usuário root e inicializa um login shell completo, carregando as variáveis de ambiente, os scripts de perfil (`/root/.bash_profile` ou `/root/.profile`) e definindo o diretório de trabalho inicial como `/root`.
 
-* `su -` (**com hífen**): Alterna para o usuário root e inicializa um login shell completo, carregando as variáveis de ambiente, os scripts de perfil (`/root/.bash_profile` ou `/root/.profile`) e definindo o diretório de trabalho inicial como `/root`.
+
 ---
+
 Verificar se está com internet:
 ```bash
 ping google.com
