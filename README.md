@@ -95,8 +95,8 @@ apt upgrade -y
 su -
 apt update
 apt install -y sudo
-usermod -aG sudo nome_do_usuario
-groups nome_do_usuario
+usermod -aG sudo `nome do usuário`
+groups `nome do usuário`
 reboot
 ```
 
@@ -145,8 +145,13 @@ sudo reboot
 Em algumas distribuições Linux, especialmente com GNOME, o copiar e colar do VirtualBox pode falhar quando a sessão está usando Wayland. 
 O VirtualBox costuma funcionar melhor com GNOME on Xorg.
 
+## Pastas compartilhadas
+Para usar pastas compartilhadas entre host e VM, é necessário adicionar o usuário ao grupo:
 
-
+```bash
+sudo usermod -aG vboxsf $USER
+sudo reboot
+```
 
 
 
