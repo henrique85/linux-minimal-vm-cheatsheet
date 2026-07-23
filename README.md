@@ -2,11 +2,6 @@
 
 Cola rápida para instalar/configurar Linux minimal em VM.
 
-
-</br>
-</br>
-
-
 ## Validação básica do sistema
 
 Alternar para usuário `root` para iniciar a configuração do sistema:
@@ -15,30 +10,20 @@ Alternar para usuário `root` para iniciar a configuração do sistema:
 su -
 ```
 
-
 > **IMPORTANTE**: </br>
 > O comando `su` significa **substitute user** ou **switch user**. Ele alterna o contexto do usuário atual para outro sem encerrar a sessão original. 
 > O papel do hífen (`-`) não é mudar a ação do comando (que continua sendo *alternar*), mas alterar o **ambiente**:
 > * `su` (**sem hífen**): Alterna para o usuário root mantendo as variáveis de ambiente (como `$PATH` e `$HOME`) do seu usuário comum.
 > * `su -` (**com hífen**): Alterna para o usuário root e inicializa um login shell completo, carregando as variáveis de ambiente, os scripts de perfil (`/root/.bash_profile` ou `/root/.profile`) e definindo o diretório de trabalho inicial como `/root`.
 
-
-</br>
-</br>
-
-
 Verificar se está com internet:
+
 ```bash
 ping google.com
 ```
 
-
-</br>
-</br>
-
-
-
 Mostrar resumo visual do sistema no terminal:
+
 ```bash
 neofetch --no-install-recommends
 neofetch
@@ -50,20 +35,12 @@ neofetch
 > * `dpkg --print-architecture`: verificar arquitetura, se o sistema é 64 bits.
 > * `hostnamectl`: verificar hostname da máquina.
 
-
-</br>
-</br>
-
-
 Verificar/ajustar data e timezone:
+
 ```bash
 timedatectl
 timedatectl set-timezone America/Sao_Paulo
 ```
-
-</br>
-</br>
-
 
 Verificar/definir idioma e localidade para pt-BR:
 
@@ -72,13 +49,48 @@ locale
 update-locale LANG=pt_BR.UTF-8 LANGUAGE=pt_BR:pt:en
 ```
 
-
-Verificar teclado e localidade pelo systemd
-
-Mostra idioma, teclado e layout configurado.
+Verificar idioma, teclado e layout configurado pelo systemd:
 
 ```bash
 localectl status
+```
+
+# Verificar interfaces de rede
+
+Lista as interfaces de rede detectadas:
+
+```bash
+ip a
+```
+
+---
+
+# 12. Verificar rota padrão
+
+Confirma se existe gateway configurado.
+
+```bash
+ip route
+```
+
+---
+
+# 13. Testar conectividade por IP
+
+Testa comunicação com a internet sem depender de DNS.
+
+```bash
+ping -c 4 8.8.8.8
+```
+
+---
+
+# 14. Testar resolução DNS
+
+Testa se nomes de domínio estão resolvendo.
+
+```bash
+ping -c 4 deb.debian.org
 ```
 
 
