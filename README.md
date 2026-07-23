@@ -1,5 +1,5 @@
 # Cola rápida para instalar/configurar Linux minimal em VM
-
+---
 *começa aqui
 
 ---
