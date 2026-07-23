@@ -34,6 +34,9 @@ ping google.com
 
 ---
 
+> 📌 **Importante:** O hífen (`-`) altera o ambiente do shell. Enquanto `su` mantém o `$PATH` do usuário comum, `su -` carrega o ambiente completo do root (`/root`).
+---
+
 Conhecer o sistema:
 ```bash
 neofetch --no-install-recommends
