@@ -1,18 +1,7 @@
 # Cola rápida para instalar/configurar Linux minimal em VM
 
-## Analisar o sistema
+## Validação básica do sistema
 
-Verificar se está com internet:
-```bash
-ping google.com
-```
-
-Conhecer o sistema:
-```bash
-neofetch --no-install-recommends
-neofetch
-```
----
 Alternar para usuário `root`:
 
 ```bash
@@ -27,6 +16,20 @@ O hífen não muda a ação do comando (que continua sendo *alternar*), mas alte
 * `su` (**sem hífen**): Alterna para o usuário root mantendo as variáveis de ambiente (como `$PATH` e `$HOME`) do seu usuário comum.
 
 * `su -` (**com hífen**): Alterna para o usuário root e inicializa um login shell completo, carregando as variáveis de ambiente, os scripts de perfil (`/root/.bash_profile` ou `/root/.profile`) e definindo o diretório de trabalho inicial como `/root`.
+---
+Verificar se está com internet:
+```bash
+ping google.com
+```
+
+---
+
+Conhecer o sistema:
+```bash
+neofetch --no-install-recommends
+neofetch
+```
+---
 
 
 
