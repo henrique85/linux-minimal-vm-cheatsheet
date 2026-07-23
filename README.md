@@ -45,12 +45,12 @@ update-locale LANG=pt_BR.UTF-8 LANGUAGE=pt_BR:pt:en
 localectl status
 ```
 
-**ALTERNATIVAS**:
-* `sudo apt install fastfetch`: versão nova do neofetch.
-* `cat /etc/os-release`: mostra a distribuição e versão instalada.
-* `uname -r`: mostra a versão do kernel carregado.
-* `dpkg --print-architecture`: verificar arquitetura, se o sistema é 64 bits.
-* `hostnamectl`: verificar hostname da máquina.
+> **Alternativas**:
+> * `sudo apt install fastfetch`: versão nova do neofetch.
+> * `cat /etc/os-release`: mostra a distribuição e versão instalada.
+> * `uname -r`: mostra a versão do kernel carregado.
+> * `dpkg --print-architecture`: verificar arquitetura, se o sistema é 64 bits.
+> * `hostnamectl`: verificar hostname da máquina.
 
 ---
 
