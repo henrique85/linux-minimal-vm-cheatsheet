@@ -14,7 +14,7 @@ neofetch --no-install-recommends
 
 
 
-Alternar para usuário **root**:
+Alternar para usuário `root`:
 
 ```bash
 su -
