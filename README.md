@@ -29,7 +29,8 @@ neofetch --no-install-recommends
 neofetch
 ```
 
-> * Alternativa: `sudo apt install fastfetch`
+> * ALTERNATIVAS: </br>
+> * `sudo apt install fastfetch`: versão nova do neofetch.
 > * `cat /etc/os-release`: mostra a distribuição e versão instalada.
 > * `uname -r`: mostra a versão do kernel carregado.
 > * `dpkg --print-architecture`: verificar arquitetura, se o sistema é 64 bits.
