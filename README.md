@@ -14,46 +14,31 @@ O papel do hífen (`-`) não é mudar a ação do comando (que continua sendo *a
 * `su` (**sem hífen**): Alterna para o usuário root mantendo as variáveis de ambiente (como `$PATH` e `$HOME`) do seu usuário comum.
 * `su -` (**com hífen**): Alterna para o usuário root e inicializa um login shell completo, carregando as variáveis de ambiente, os scripts de perfil (`/root/.bash_profile` ou `/root/.profile`) e definindo o diretório de trabalho inicial como `/root`.
 
-
-
-
-
 ## Validação básica do sistema
 
-
-Mostrar resumo visual do sistema no terminal:
-
 ```bash
+# Mostrar resumo visual do sistema no terminal:
 neofetch --no-install-recommends
 neofetch
-```
 
-> **ALTERNATIVAS**: </br>
-> * `sudo apt install fastfetch`: versão nova do neofetch.
-> * `cat /etc/os-release`: mostra a distribuição e versão instalada.
-> * `uname -r`: mostra a versão do kernel carregado.
-> * `dpkg --print-architecture`: verificar arquitetura, se o sistema é 64 bits.
-> * `hostnamectl`: verificar hostname da máquina.
-
-Verificar/ajustar data e timezone:
-
-```bash
+# Verificar/ajustar data e timezone:
 timedatectl
 timedatectl set-timezone America/Sao_Paulo
-```
 
-Verificar/definir idioma e localidade para pt-BR:
-
-```bash
+# Verificar/definir idioma e localidade para pt-BR:
 locale
 update-locale LANG=pt_BR.UTF-8 LANGUAGE=pt_BR:pt:en
-```
 
-Verificar idioma, teclado e layout configurado pelo systemd:
-
-```bash
+# Verificar idioma, teclado e layout configurado pelo systemd:
 localectl status
 ```
+
+**ALTERNATIVAS**:
+* `sudo apt install fastfetch`: versão nova do neofetch.
+* `cat /etc/os-release`: mostra a distribuição e versão instalada.
+* `uname -r`: mostra a versão do kernel carregado.
+* `dpkg --print-architecture`: verificar arquitetura, se o sistema é 64 bits.
+* `hostnamectl`: verificar hostname da máquina.
 
 ## Validação da rede
 
