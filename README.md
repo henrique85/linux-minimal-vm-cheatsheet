@@ -19,7 +19,7 @@ Alternar para usuário `root`:
 ```bash
 su -
 ```
-Nota:
+Nota:</br>
 `su` significa substitute user ou switch user. Ele alterna o contexto do usuário atual para outro sem encerrar a sessão original. Se você executar `su -`, você alterna para o `root`.
 
 
