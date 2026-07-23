@@ -1,13 +1,15 @@
 # linux-minimal-vm-cheatsheet
 
 Cola rápida para instalar/configurar Linux minimal em VM.
+
+
 </br>
 </br>
 
 
 ## Validação básica do sistema
 
-Alternar para usuário `root`:
+Alternar para usuário `root` para iniciar a configuração do sistema:
 
 ```bash
 su -
@@ -21,51 +23,28 @@ su -
 > * `su -` (**com hífen**): Alterna para o usuário root e inicializa um login shell completo, carregando as variáveis de ambiente, os scripts de perfil (`/root/.bash_profile` ou `/root/.profile`) e definindo o diretório de trabalho inicial como `/root`.
 
 
----
+</br>
+</br>
+
 
 Verificar se está com internet:
 ```bash
 ping google.com
 ```
 
----
 
-> [!IMPORTANT]
-> **O papel do hífen (`-`):**
-> * `su`: mantém as variáveis de ambiente (`$PATH`, `$HOME`) do usuário comum.
-> * `su -`: inicializa um *login shell* completo, carregando o ambiente e o diretório `/root`.
+</br>
 </br>
 
-> [!TIP]
-> **O papel do hífen (`-`):**
-> * `su`: mantém as variáveis de ambiente (`$PATH`, `$HOME`) do usuário comum.
-> * `su -`: inicializa um *login shell* completo, carregando o ambiente e o diretório `/root`.
-> * 
-</br>
-Outros tipos de callouts suportados:
 
-> [!NOTE] (Azul - para notas gerais)
 
-> [!TIP] (Verde - para dicas de boas práticas)
-
-> [!WARNING] (Amarelo - para alertas)
-
-> [!CAUTION] (Vermelho - para riscos/erros graves)
-
-> Teste
-> Aqui é um teste
-
----
-
-> 📌 **Importante:** O hífen (`-`) altera o ambiente do shell. Enquanto `su` mantém o `$PATH` do usuário comum, `su -` carrega o ambiente completo do root (`/root`).
----
-
-Conhecer o sistema:
+Mostrar resumo visual do sistema no terminal:
 ```bash
 neofetch --no-install-recommends
 neofetch
 ```
----
+
+Alternativa: sudo apt install fastfetch
 
 
 
@@ -74,30 +53,9 @@ neofetch
 
 
 
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
-# INSERIR DADOS ACIMA
-
----
-
-# 5. Instalar pré-requisitos no Debian/Ubuntu
-
-Dentro da VM Linux, execute:
-
-```bash
-sudo apt update
-sudo apt install -y dkms build-essential linux-headers-$(uname -r)
-```
 
 
-## Como entrar com GNOME on Xorg
+
 
 </br>
 </br>
@@ -820,3 +778,34 @@ Fluxo ideal para Debian mínimo em VM.
 
 
 # 15. Verificar se o usuário está no grupo `vboxsf`
+
+
+> [!IMPORTANT]
+> **O papel do hífen (`-`):**
+> * `su`: mantém as variáveis de ambiente (`$PATH`, `$HOME`) do usuário comum.
+> * `su -`: inicializa um *login shell* completo, carregando o ambiente e o diretório `/root`.
+</br>
+
+> [!TIP]
+> **O papel do hífen (`-`):**
+> * `su`: mantém as variáveis de ambiente (`$PATH`, `$HOME`) do usuário comum.
+> * `su -`: inicializa um *login shell* completo, carregando o ambiente e o diretório `/root`.
+> * 
+</br>
+Outros tipos de callouts suportados:
+
+> [!NOTE] (Azul - para notas gerais)
+
+> [!TIP] (Verde - para dicas de boas práticas)
+
+> [!WARNING] (Amarelo - para alertas)
+
+> [!CAUTION] (Vermelho - para riscos/erros graves)
+
+> Teste
+> Aqui é um teste
+
+---
+
+> 📌 **Importante:** O hífen (`-`) altera o ambiente do shell. Enquanto `su` mantém o `$PATH` do usuário comum, `su -` carrega o ambiente completo do root (`/root`).
+---
