@@ -55,7 +55,7 @@ neofetch
 </br>
 
 
-Verificar e ajustar data e timezone:
+Verificar/ajustar data e timezone:
 ```bash
 timedatectl
 timedatectl set-timezone America/Sao_Paulo
@@ -65,19 +65,22 @@ timedatectl set-timezone America/Sao_Paulo
 </br>
 
 
-Verificar idioma e localidade:
-
-Mostra idioma, moeda, data, medidas e mensagens do sistema.
+Verificar/definir idioma e localidade para pt-BR:
 
 ```bash
 locale
-```
-
-Define o sistema para pt-BR.
-
-```bash
 update-locale LANG=pt_BR.UTF-8 LANGUAGE=pt_BR:pt:en
 ```
+
+
+Verificar teclado e localidade pelo systemd
+
+Mostra idioma, teclado e layout configurado.
+
+```bash
+localectl status
+```
+
 
 
 
