@@ -63,35 +63,27 @@ Lista as interfaces de rede detectadas:
 ip a
 ```
 
----
-
-# 12. Verificar rota padrão
-
-Confirma se existe gateway configurado.
+Verificar rota padrão:
 
 ```bash
 ip route
 ```
 
----
-
-# 13. Testar conectividade por IP
-
-Testa comunicação com a internet sem depender de DNS.
+Testar conectividade por IP:
 
 ```bash
 ping -c 4 8.8.8.8
 ```
 
----
-
-# 14. Testar resolução DNS
-
-Testa se nomes de domínio estão resolvendo.
+Testar resolução DNS:
 
 ```bash
 ping -c 4 deb.debian.org
 ```
+
+
+
+
 
 
 
