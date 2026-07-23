@@ -19,24 +19,28 @@ O papel do hífen (`-`) não é mudar a ação do comando (que continua sendo *a
 ## Validação básica do sistema
 
 #### Mostrar resumo visual do sistema no terminal:
+
 ```bash
 neofetch --no-install-recommends
 neofetch
 ```
 
 #### Verificar/ajustar data e timezone:
+
 ```bash
 timedatectl
 timedatectl set-timezone America/Sao_Paulo
 ```
 
 #### Verificar/definir idioma e localidade para pt-BR:
+
 ```bash
 locale
 update-locale LANG=pt_BR.UTF-8 LANGUAGE=pt_BR:pt:en
 ```
 
 #### Verificar idioma, teclado e layout configurado pelo systemd:
+
 ```bash
 localectl status
 ```
@@ -48,41 +52,50 @@ localectl status
 * `dpkg --print-architecture`: verificar arquitetura, se o sistema é 64 bits.
 * `hostnamectl`: verificar hostname da máquina.
 
+---
+
 ## Validação da rede
 
 #### Verificar conectividade com internet:
+
 ```bash
 ping -c 4 8.8.8.8
 ```
 
 #### Lista as interfaces de rede detectadas:
+
 ```bash
 ip a
 ```
 
 ##### Verificar rota padrão:
+
 ```bash
 ip route
 ```
 
 ##### Testar resolução DNS:
+
 ```bash
 ping -c 4 deb.debian.org
 ```
 
-##### Verificar e editar os repositórios APT ativos
+## Verificar e editar os repositórios APT ativos
 
-Mostra as fontes de pacotes configuradas:
+#### Mostra as fontes de pacotes configuradas:
+
 ```bash
 grep -R "^[^#]" /etc/apt/sources.list /etc/apt/sources.list.d/ 2>/dev/null
 ```
 
-Abre o arquivo principal de repositórios do Debian:
+#### Abre o arquivo principal de repositórios do Debian:
+
 ```bash
 nano /etc/apt/sources.list
 ```
 
-Arquivo sources.list recomendado para Debian 13 Trixie:
+#### Arquivo sources.list recomendado para Debian 13 Trixie:
+
 ```bash
 deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
 deb-src http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
@@ -94,9 +107,19 @@ deb http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-
 deb-src http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware
 ```
 
+## Atualizar índice de pacotes
 
+#### Atualiza a lista de pacotes disponíveis:
 
+```bash
+apt update
+```
 
+#### Atualizar pacotes instalados:
+
+```bash
+apt upgrade -y
+```
 
 
 
