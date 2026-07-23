@@ -26,6 +26,14 @@ ping google.com
 
 ---
 
+> [!IMPORTANT]
+> **O papel do hífen (`-`):**
+> * `su`: mantém as variáveis de ambiente (`$PATH`, `$HOME`) do usuário comum.
+> * `su -`: inicializa um *login shell* completo, carregando o ambiente e o diretório `/root`.
+
+
+---
+
 Conhecer o sistema:
 ```bash
 neofetch --no-install-recommends
