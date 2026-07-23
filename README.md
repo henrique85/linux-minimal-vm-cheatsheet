@@ -10,6 +10,7 @@ ping google.com
 Conhecer o sistema:
 ```bash
 neofetch --no-install-recommends
+neofetch
 ```
 ---
 Alternar para usuário `root`:
@@ -29,7 +30,7 @@ O hífen não muda a ação do comando (que continua sendo *alternar*), mas alte
 
 
 
-
+# AAAAAAAAAAA
 
 ---
 
