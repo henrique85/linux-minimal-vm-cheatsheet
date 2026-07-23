@@ -1,4 +1,6 @@
-# Cola rápida para instalar/configurar Linux minimal em VM
+# linux-minimal-vm-cheatsheet
+
+Cola rápida para instalar/configurar Linux minimal em VM.
 
 ## Validação básica do sistema
 
