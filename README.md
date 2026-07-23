@@ -29,7 +29,7 @@ neofetch --no-install-recommends
 neofetch
 ```
 
-> * ALTERNATIVAS: </br>
+> **ALTERNATIVAS**: </br>
 > * `sudo apt install fastfetch`: versão nova do neofetch.
 > * `cat /etc/os-release`: mostra a distribuição e versão instalada.
 > * `uname -r`: mostra a versão do kernel carregado.
