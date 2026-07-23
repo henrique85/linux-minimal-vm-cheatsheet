@@ -17,7 +17,7 @@ O papel do hífen (`-`) não é mudar a ação do comando (que continua sendo *a
 ## Validação básica do sistema
 
 ```text
-# **Mostrar resumo visual do sistema no terminal:**
+# Mostrar resumo visual do sistema no terminal:
 neofetch --no-install-recommends
 neofetch
 
