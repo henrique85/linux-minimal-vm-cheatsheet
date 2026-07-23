@@ -17,19 +17,19 @@ O papel do hífen (`-`) não é mudar a ação do comando (que continua sendo *a
 ## Validação básica do sistema
 
 ```bash
-# Mostrar resumo visual do sistema no terminal:
+# Mostrar resumo visual do sistema no terminal.
 neofetch --no-install-recommends
 neofetch
 
-# Verificar/ajustar data e timezone:
+# Verificar/ajustar data e timezone.
 timedatectl
 timedatectl set-timezone America/Sao_Paulo
 
-# Verificar/definir idioma e localidade para pt-BR:
+# Verificar/definir idioma e localidade para pt-BR.
 locale
 update-locale LANG=pt_BR.UTF-8 LANGUAGE=pt_BR:pt:en
 
-# Verificar idioma, teclado e layout configurado pelo systemd:
+# Verificar idioma, teclado e layout configurado pelo systemd.
 localectl status
 ```
 
