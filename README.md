@@ -16,11 +16,6 @@ su -
 > * `su` (**sem hífen**): Alterna para o usuário root mantendo as variáveis de ambiente (como `$PATH` e `$HOME`) do seu usuário comum.
 > * `su -` (**com hífen**): Alterna para o usuário root e inicializa um login shell completo, carregando as variáveis de ambiente, os scripts de perfil (`/root/.bash_profile` ou `/root/.profile`) e definindo o diretório de trabalho inicial como `/root`.
 
-Verificar se está com internet:
-
-```bash
-ping google.com
-```
 
 Mostrar resumo visual do sistema no terminal:
 
@@ -56,29 +51,19 @@ Verificar idioma, teclado e layout configurado pelo systemd:
 localectl status
 ```
 
-# Verificar interfaces de rede
+# Validação da rede:
+
+```text
+Verificar conectividade com internet:
+ping -c 4 8.8.8.8
 
 Lista as interfaces de rede detectadas:
-
-```bash
 ip a
-```
 
 Verificar rota padrão:
-
-```bash
 ip route
-```
-
-Testar conectividade por IP:
-
-```bash
-ping -c 4 8.8.8.8
-```
 
 Testar resolução DNS:
-
-```bash
 ping -c 4 deb.debian.org
 ```
 
