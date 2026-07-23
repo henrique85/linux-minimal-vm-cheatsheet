@@ -90,8 +90,8 @@ apt upgrade -y
 su -
 apt update
 apt install -y sudo
-usermod -aG sudo henrique
-groups henrique
+usermod -aG sudo nome_do_usuario
+groups nome_do_usuario
 reboot
 ```
 
