@@ -1,4 +1,4 @@
-# Cola rápida para instalar/configurar Linux minimal em VM.
+# Cola rápida para instalar/configurar Linux minimal em VM
 
 #### Alternar para usuário `root` para iniciar a configuração do sistema:
 
