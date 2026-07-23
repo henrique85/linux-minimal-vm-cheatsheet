@@ -31,6 +31,19 @@ ping google.com
 > * `su`: mantém as variáveis de ambiente (`$PATH`, `$HOME`) do usuário comum.
 > * `su -`: inicializa um *login shell* completo, carregando o ambiente e o diretório `/root`.
 
+</br>
+Outros tipos de callouts suportados:
+
+> [!NOTE] (Azul - para notas gerais)
+
+> [!TIP] (Verde - para dicas de boas práticas)
+
+> [!WARNING] (Amarelo - para alertas)
+
+> [!CAUTION] (Vermelho - para riscos/erros graves)
+
+> Teste
+> Aqui é um teste
 
 ---
 
