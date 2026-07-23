@@ -8,13 +8,12 @@ Alternar para usuário `root` para iniciar a configuração do sistema:
 su -
 ```
 
-```text
 **IMPORTANTE**: </br>
 O comando `su` significa **substitute user** ou **switch user**. Ele alterna o contexto do usuário atual para outro sem encerrar a sessão original. 
 O papel do hífen (`-`) não é mudar a ação do comando (que continua sendo *alternar*), mas alterar o **ambiente**:
 * `su` (**sem hífen**): Alterna para o usuário root mantendo as variáveis de ambiente (como `$PATH` e `$HOME`) do seu usuário comum.
 * `su -` (**com hífen**): Alterna para o usuário root e inicializa um login shell completo, carregando as variáveis de ambiente, os scripts de perfil (`/root/.bash_profile` ou `/root/.profile`) e definindo o diretório de trabalho inicial como `/root`.
-```
+
 
 
 
