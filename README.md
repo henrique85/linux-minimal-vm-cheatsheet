@@ -20,7 +20,7 @@ su -
 Nota:</br>
 O comando `su` significa **substitute user** ou **switch user**. Ele alterna o contexto do usuário atual para outro sem encerrar a sessão original. 
 
-O papel do hífen (`-`)
+O papel do hífen (`-`)</br>
 O hífen não muda a ação do comando (que continua sendo *alternar*), mas altera o **ambiente**:
 
 * `su` (**sem hífen**): Alterna para o usuário root mantendo as variáveis de ambiente (como `$PATH` e `$HOME`) do seu usuário comum.
