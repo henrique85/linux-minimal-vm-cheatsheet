@@ -14,6 +14,8 @@ O papel do hífen (`-`) não é mudar a ação do comando (que continua sendo *a
 * `su` (**sem hífen**): Alterna para o usuário root mantendo as variáveis de ambiente (como `$PATH` e `$HOME`) do seu usuário comum.
 * `su -` (**com hífen**): Alterna para o usuário root e inicializa um login shell completo, carregando as variáveis de ambiente, os scripts de perfil (`/root/.bash_profile` ou `/root/.profile`) e definindo o diretório de trabalho inicial como `/root`.
 
+---
+
 ## Validação básica do sistema
 
 #### Mostrar resumo visual do sistema no terminal:
@@ -22,20 +24,20 @@ neofetch --no-install-recommends
 neofetch
 ```
 
-```text
-# Mostrar resumo visual do sistema no terminal:
-neofetch --no-install-recommends
-neofetch
-
-# Verificar/ajustar data e timezone:
+### Verificar/ajustar data e timezone:
+```bash
 timedatectl
 timedatectl set-timezone America/Sao_Paulo
+```
 
-# Verificar/definir idioma e localidade para pt-BR:
+### Verificar/definir idioma e localidade para pt-BR:
+```bash
 locale
 update-locale LANG=pt_BR.UTF-8 LANGUAGE=pt_BR:pt:en
+```
 
-# Verificar idioma, teclado e layout configurado pelo systemd:
+### Verificar idioma, teclado e layout configurado pelo systemd:
+```bash
 localectl status
 ```
 
