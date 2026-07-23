@@ -1,12 +1,18 @@
 # Cola rápida para instalar/configurar Linux minimal em VM
 
-Verificar se está com internet:
+## Analisar o sistema
 
+Verificar se está com internet:
 ```bash
 ping google.com
 ```
 
----
+Conhecer o sistema:
+```bash
+neofetch --no-install-recommends
+```
+
+
 
 Alternar para usuário root:
 
