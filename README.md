@@ -95,8 +95,8 @@ apt upgrade -y
 su -
 apt update
 apt install -y sudo
-usermod -aG sudo `nome do usuário`
-groups `nome do usuário`
+usermod -aG sudo nome_do_usuário
+groups nome_do_usuário
 reboot
 ```
 
@@ -149,23 +149,13 @@ O VirtualBox costuma funcionar melhor com GNOME on Xorg.
 Para usar pastas compartilhadas entre host e VM, é necessário adicionar o usuário ao grupo:
 
 ```bash
-sudo usermod -aG vboxsf $USER
+sudo usermod -aG vboxsf nome_do_usuário
 sudo reboot
 ```
 
+---
 
-
-
-
-
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-</br>
-
+# Outros comandos
 
 #### Verificar/ajustar data e timezone:
 
