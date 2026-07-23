@@ -1,15 +1,15 @@
 # Cola rápida para instalar/configurar Linux minimal em VM
 
-#### Alternar para usuário `root` para iniciar a configuração do sistema:
-
-```bash
-su -
-```
-
 #### Validar conectividade com a internet:
 
 ```bash
 ping -c 4 8.8.8.8
+```
+
+#### Alternar para usuário `root` para iniciar a configuração do sistema:
+
+```bash
+su -
 ```
 
 # Arquivo sources.list DEBIAN 13
