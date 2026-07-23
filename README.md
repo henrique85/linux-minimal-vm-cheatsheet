@@ -51,7 +51,7 @@ Verificar idioma, teclado e layout configurado pelo systemd:
 localectl status
 ```
 
-# Validação da rede:
+## Validação da rede
 
 ```text
 Verificar conectividade com internet:
@@ -67,7 +67,27 @@ Testar resolução DNS:
 ping -c 4 deb.debian.org
 ```
 
+# Verificar e editar os repositórios APT ativos
 
+```text
+# Mostra as fontes de pacotes configuradas.
+grep -R "^[^#]" /etc/apt/sources.list /etc/apt/sources.list.d/ 2>/dev/null
+
+# Abre o arquivo principal de repositórios do Debian:
+nano /etc/apt/sources.list
+
+# Arquivo sources.list recomendado para Debian 13 Trixie
+
+deb http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian/ trixie main contrib non-free non-free-firmware
+
+deb http://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+deb-src http://security.debian.org/debian-security trixie-security main contrib non-free non-free-firmware
+
+deb http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware
+deb-src http://deb.debian.org/debian/ trixie-updates main contrib non-free non-free-firmware
+
+```
 
 
 
